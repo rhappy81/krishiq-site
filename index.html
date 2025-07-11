@@ -1,228 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KrishiQ - Ayurvedic & Skincare</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: #f5f5f5;
-      color: #333;
-      overflow-x: hidden;
-    }
-
-    header {
-      background: #2e7d32;
-      padding: 20px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 600;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 300;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #c8e6c9;
-    }
-
-    .hero {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1615484477333-22d5f7f5c6e6') no-repeat center center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      animation: fadeIn 3s ease-in-out;
-    }
-
-    .hero h1 {
-      font-size: 4rem;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px 40px;
-      border-radius: 10px;
-      animation: slideInDown 2s ease-out;
-    }
-
-    @keyframes slideInDown {
-      from {
-        transform: translateY(-100px);
-        opacity: 0;
-      }
-
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    main {
-      padding: 100px 20px 40px;
-      background: #fff;
-      animation: fadeIn 2s ease-in;
-    }
-
-    .about {
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .about h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #2e7d32;
-    }
-
-    .about p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 30px;
-    }
-
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .product {
-      background: #e8f5e9;
-      padding: 20px;
-      width: 280px;
-      border-radius: 10px;
-      transition: transform 0.3s;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .product:hover {
-      transform: scale(1.05);
-    }
-
-    .product img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      background: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <div class="logo">KrishiQ</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Coming Soon</h1>
-  </section>
-
-  <main>
-    <section class="about" id="about">
-      <h2>About KrishiQ</h2>
-      <p>KrishiQ is a Swadeshi brand dedicated to reviving ancient Ayurvedic beauty and skincare practices. Our handmade products include herbal soaps, shampoos, reetha powder, neem powder, tulsi powder, and nourishing face packs – all crafted using traditional "nuskha" techniques. Inspired by the values of Rajiv Dixit and committed to promoting village women's talent, KrishiQ is proud to be truly Swadeshi and natural.</p>
-    </section>
-
-    <section class="products" id="products">
-      <div class="product">
-        <img src="https://source.unsplash.com/280x180/?soap,herbal" alt="Soap">
-        <h3>Herbal Soap</h3>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/280x180/?shampoo,natural" alt="Shampoo">
-        <h3>Natural Shampoo</h3>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/280x180/?reetha,ayurveda" alt="Reetha Powder">
-        <h3>Reetha Powder</h3>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/280x180/?neem,herbs" alt="Neem Powder">
-        <h3>Neem Powder</h3>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/280x180/?tulsi,ayurvedic" alt="Tulsi Powder">
-        <h3>Tulsi Powder</h3>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/280x180/?facepack,organic" alt="Face Pack">
-        <h3>Face Packs</h3>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <p>© 2025 KrishiQ | Created by Sonu Kumar</p>
-    <p>Email: care@krishiq.com</p>
-    <p>Instagram: <a style="color: #c8e6c9" href="https://instagram.com/krishiq.in" target="_blank">@krishiq.in</a></p>
-  </footer>
-
-  <script>
-    // Smooth scroll on nav click
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiQ - Ayurvedic Skincare Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
-      });
-    });
-  </script>
-</body>
+        
+        :root {
+            --primary-color: #4a8c3a;
+            --secondary-color: #f5f0e1;
+            --accent-color: #e67e22;
+            --text-dark: #333;
+            --text-light: #f5f5f5;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            padding: 0.5rem 2rem;
+            background-color: rgba(74, 140, 58, 0.95);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            margin-top: 60px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .coming-soon {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation: pulse 2s infinite;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 1rem;
+            animation: slideInLeft 1s ease-in-out;
+        }
+        
+        .about-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            padding: 1rem;
+            animation: slideInRight 1s ease-in-out;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Products Section */
+        .products {
+            padding: 5rem 2rem;
+            background-color: var(--secondary-color);
+        }
+        
+        .products-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .product-info p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .handmade-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        /* Mission Section */
+        .mission {
+            padding: 5rem 2rem;
+            background: linear-gradient(rgba(74, 140, 58, 0.9), rgba(74, 140, 58, 0.9)), url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: var(--text-light);
+            text-align: center;
+        }
+        
+        .mission-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .mission h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .mission p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .swadeshi {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+        
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        
+        .footer-about p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links h3, .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-contact p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin-right: 1rem;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideInLeft {
+            from { 
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from { 
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 70px);
+                background-color: var(--primary-color);
+                transition: all 0.5s ease;
+                z-index: 999;
+            }
+            
+            nav.active {
+                left: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 2rem;
+            }
+            
+            nav ul li {
+                margin: 1rem 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .coming-soon {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>KrishiQ</span>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pure Ayurvedic Skincare</h1>
+            <p>Handcrafted with love using ancient Indian recipes</p>
+            <div class="coming-soon">Coming Soon</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About KrishiQ</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Traditional Ayurveda Meets Modern Skincare</h2>
+                <p>KrishiQ is a brand dedicated to bringing you the purest ayurvedic skincare products made using traditional recipes passed down through generations. Our products are 100% natural, chemical-free, and handmade with care.</p>
+                <p>We source our ingredients directly from organic farms and local growers, ensuring the highest quality while supporting rural communities. Each product is crafted following ancient Ayurvedic principles to provide effective, gentle care for your skin and hair.</p>
+                <p>At KrishiQ, we believe in the power of nature to heal and nourish. Our formulations combine the wisdom of Ayurveda with modern skincare needs to create products that are both effective and sustainable.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ayurvedic Ingredients">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="products-container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="handmade-badge">Handmade</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597259032486-29301a62a9d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Herbal Soap">
+                    </div>
+                    <div class="product-info">
+                        <h3>Herbal Soap</h3>
+                        <p>Made with neem, turmeric, and aloe vera for glowing, healthy skin. Free from harsh chemicals and synthetic fragrances.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="handmade-badge">Handmade</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ayurvedic Shampoo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ayurvedic Shampoo</h3>
+                        <p>Natural shampoo with reetha, shikakai, and amla for strong, shiny hair. Gentle on scalp and free from sulfates.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="handmade-badge">Handmade</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Reetha Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Reetha Powder</h3>
+                        <p>Pure reetha powder for natural hair cleansing. Rich in saponins that gently clean without stripping natural oils.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="handmade-badge">Handmade</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1604085572504-a392d8350d4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Neem Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Neem Powder</h3>
+                        <p>Antibacterial neem powder for acne-prone skin. Helps control oil production and prevent breakouts naturally.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="handmade-badge">Handmade</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1cfac2064?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tulsi Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tulsi Powder</h3>
+                        <p>Sacred tulsi powder for skin purification. Known for its anti-aging and skin brightening properties.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="handmade-badge">Handmade</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Herbal Face Pack">
+                    </div>
+                    <div class="product-info">
+                        <h3>Herbal Face Pack</h3>
+                        <p>Detoxifying face pack with multani mitti, sandalwood, and rose. Deep cleanses and revitalizes tired skin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission" id="mission">
+        <div class="mission-container">
+            <h2>Our Mission</h2>
+            <p>KrishiQ was born out of a desire to revive traditional Indian skincare wisdom while empowering rural women artisans. We work directly with village women, helping them preserve ancient beauty recipes and earn sustainable livelihoods.</p>
+            <p>Inspired by Rajiv Dixit's vision of Swadeshi, we are committed to promoting indigenous products made from locally sourced ingredients. Every KrishiQ product supports the talent and knowledge of Indian village women.</p>
+            <p>Our goal is to bring you effective, natural skincare while preserving India's rich herbal heritage and supporting rural communities.</p>
+            <div class="swadeshi">Swadeshi • Sustainable • Ethical</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">KrishiQ</div>
+                <p>Pure Ayurvedic skincare products handmade with traditional recipes. Promoting Swadeshi and empowering rural women artisans.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/krishiq.in" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> care@krishiq.com</p>
+                <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                <p><i class="fas fa-map-marker-alt"></i> India</p>
+                <p><i class="fab fa-instagram"></i> @krishiq.in</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 KrishiQ. All Rights Reserved.</p>
+            <p>Created by Sonu Kumar</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.getElementById('nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+        
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animation on Scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.about-text, .about-image, .product-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateX(0)';
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
 </html>
