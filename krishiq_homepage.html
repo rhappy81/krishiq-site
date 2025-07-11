@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KrishiQ - Ayurvedic & Skincare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #2e7d32;
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 300;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1615484477333-22d5f7f5c6e6') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 10px;
+      animation: slideInDown 2s ease-out;
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    main {
+      padding: 100px 20px 40px;
+      background: #fff;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .about {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product {
+      background: #e8f5e9;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">KrishiQ</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Coming Soon</h1>
+  </section>
+
+  <main>
+    <section class="about" id="about">
+      <h2>About KrishiQ</h2>
+      <p>KrishiQ is a Swadeshi brand dedicated to reviving ancient Ayurvedic beauty and skincare practices. Our handmade products include herbal soaps, shampoos, reetha powder, neem powder, tulsi powder, and nourishing face packs – all crafted using traditional "nuskha" techniques. Inspired by the values of Rajiv Dixit and committed to promoting village women's talent, KrishiQ is proud to be truly Swadeshi and natural.</p>
+    </section>
+
+    <section class="products" id="products">
+      <div class="product">
+        <img src="https://source.unsplash.com/280x180/?soap,herbal" alt="Soap">
+        <h3>Herbal Soap</h3>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/280x180/?shampoo,natural" alt="Shampoo">
+        <h3>Natural Shampoo</h3>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/280x180/?reetha,ayurveda" alt="Reetha Powder">
+        <h3>Reetha Powder</h3>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/280x180/?neem,herbs" alt="Neem Powder">
+        <h3>Neem Powder</h3>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/280x180/?tulsi,ayurvedic" alt="Tulsi Powder">
+        <h3>Tulsi Powder</h3>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/280x180/?facepack,organic" alt="Face Pack">
+        <h3>Face Packs</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>© 2025 KrishiQ | Created by Sonu Kumar</p>
+    <p>Email: care@krishiq.com</p>
+    <p>Instagram: <a style="color: #c8e6c9" href="https://instagram.com/krishiq.in" target="_blank">@krishiq.in</a></p>
+  </footer>
+
+  <script>
+    // Smooth scroll on nav click
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
